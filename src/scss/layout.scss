@@ -1,0 +1,285 @@
+$YOUTUBE-BACCOLOR:#404040;
+$YOUTUBE-FONTCOLOR:#ffffff;
+$YOUTUBE-BLACK:#1a1a1a;
+$TEXT-ALIGN:center;
+
+* {
+  @include reset;
+}
+
+body {
+  @include width_height(100vw,100vh);
+}
+
+header {
+  @include width_height(100vw, 10vh);
+
+  background-color: $YOUTUBE-BACCOLOR;
+  display: flex;
+  justify-content: space-between;
+
+  #left {
+    height: 10vh;  
+      
+    @include flex-center;
+    margin-left: 2rem;
+
+      .hamburgermenü {
+         a {
+            i {
+              color: $YOUTUBE-FONTCOLOR;
+              font-size: 1.5rem;
+             }
+         }
+        }
+        .logo {
+           color: red;
+           font-size: 1.5rem;
+          margin-left:1.5rem ;
+          }
+
+        .text {
+            color: $YOUTUBE-FONTCOLOR;
+            font-size: 1.5rem;
+            sup {
+            font-size: 0.8rem;
+            color: gray;
+           }
+         }
+    }
+
+  #search {
+    @include width_height(50vw,10vh);
+        display: flex;
+        align-items: center;
+        margin-left: 20vw;
+
+      input {
+        width: 30vw;
+        height: 5vh;
+        border-radius: 1rem 0 0 1rem;
+        background-color: $YOUTUBE-BLACK;
+        
+      }
+
+      .glass {
+        padding: 0.5rem;
+        width: 5vw;
+        height: 5vh;
+        // text-align: center;
+        text-align: $TEXT-ALIGN;
+        background-color: #333333;
+        border-radius:0 1rem 1rem 0;
+
+        i {
+          font-size: 1.3rem;
+        }
+      }
+      .micro {
+        i {
+          color: $YOUTUBE-FONTCOLOR;
+          font-size: 1.5rem;
+          margin-left: 1rem;
+        }
+      }
+  }
+  #right {
+        ul {
+           @include width_height(25vw,10vh);
+           display: flex;
+            align-items: center;
+            justify-content:space-evenly;
+
+            li {
+              list-style: none;
+              color: $YOUTUBE-FONTCOLOR;
+              font-size: 1.5rem;
+            }
+          } 
+    } 
+}
+
+#container {
+  @include width_height(100vw,90vh);
+  display: flex;
+  
+
+  aside {    
+      @include width_height(20vw,90vh);
+      background-color: $YOUTUBE-BACCOLOR;
+      color: $YOUTUBE-FONTCOLOR;
+      font-size: 0.8vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+    
+      div {
+        padding-left: 2vw;
+        font-size: 1rem;
+      }
+    
+      .ersteteil {
+        height: 18vh;
+        border-bottom: solid 2px gray;
+        
+        ul {
+          height: 18vh;
+          @include flex-column-evenly;
+          
+        }
+      }
+      .zweiteteil {
+        height: 32vh;
+        border-bottom: solid 2px gray;
+        ul {
+          height: 32vh;
+          @include flex-column-evenly;
+        }
+      }
+    
+      .dritteteil {
+        height: 40vh;
+    
+          h3 {
+            margin-top: 2rem;
+          }
+          ul {
+            @include flex-column-evenly;
+          }
+      }
+      ul {
+          margin-left: 0.5rem;
+    
+        
+         li {
+            list-style: none;
+            margin: .5vh 0.4rem;
+    
+           span {
+              margin-left: 0.8rem;
+            }
+        }
+      }
+    }
+
+    main {
+      @include width_height(80vw,90vh);
+      background-color: darken($color: #404040, $amount: 10);
+
+      #überschrift {
+        @include width_height(80vw,22vh);
+      }
+
+      #parishilton {
+        display: flex;
+        flex-direction: column;
+        @include width_height(80vw,18vh);
+
+         .oben {
+             display: flex;
+             justify-content: flex-start;
+             height: 9vh;
+
+
+             .profil_image {
+                 img {
+                    width: 5rem;
+                    height: 5rem;
+                    border-radius: 50%;
+                    margin-left: 5vw;
+                     }
+               }
+
+              .text_mitte {
+                  margin: 1rem;
+
+                   p:first-child {
+                       font-size: 1.5rem;
+                       color: $YOUTUBE-FONTCOLOR;
+
+                        span { i {
+                           color: $YOUTUBE-FONTCOLOR;
+                          font-size: 2rem;
+                            } }
+
+                    }
+                  p:last-child {
+                      color: lightgray;
+
+                    }      
+                }
+
+                button {
+                  background-color: red;
+                  width: 10rem;
+                  height: 3rem;
+                  text-transform: uppercase;
+                  margin-left: 50vw;
+                  margin-top: 1rem;
+                  color: $YOUTUBE-FONTCOLOR;
+
+                  &:hover {
+                    background-color: lighten($color: red, $amount: 30);
+                  }
+                }
+           }
+
+          .text-list {
+            ul {
+              margin-top: 1.5rem;
+              height: 9vh;
+
+              li {
+                display: inline-block;
+                margin: 1vh 0 1vh 5vw;
+                list-style: none;
+                text-transform: uppercase;
+                color: lightgray;
+
+                &:nth-child(2) {
+                  color: $YOUTUBE-FONTCOLOR;
+                  border-bottom: solid 2px white;
+                  padding-bottom: 1.5rem;
+                }
+              }
+            }
+          }
+       }
+
+       #images {
+        @include width_height(80vw,50vh);
+        background-color: $YOUTUBE-BLACK;
+
+          h3 {
+            color: $YOUTUBE-FONTCOLOR;
+            text-transform: capitalize;
+            padding: 2rem 0 0 2.5rem;
+          }
+          .container_images {
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            gap: 0.2rem;
+            padding: 2rem;
+
+            div {
+              width: 15vw;
+              height: 19vh;
+
+              img {
+                width: 15vw;
+                height: 15vh;
+              }
+
+              p {
+                color: $YOUTUBE-FONTCOLOR;
+                text-align: $TEXT-ALIGN;
+              }
+            }
+          } 
+
+        
+       }
+
+    }
+    
+}

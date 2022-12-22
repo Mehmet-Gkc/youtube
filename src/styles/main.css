@@ -1,0 +1,243 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+header {
+  width: 100vw;
+  height: 10vh;
+  background-color: #404040;
+  display: flex;
+  justify-content: space-between;
+}
+header #left {
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2rem;
+}
+header #left .hamburgermenü a i {
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+header #left .logo {
+  color: red;
+  font-size: 1.5rem;
+  margin-left: 1.5rem;
+}
+header #left .text {
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+header #left .text sup {
+  font-size: 0.8rem;
+  color: gray;
+}
+header #search {
+  width: 50vw;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  margin-left: 20vw;
+}
+header #search input {
+  width: 30vw;
+  height: 5vh;
+  border-radius: 1rem 0 0 1rem;
+  background-color: #1a1a1a;
+}
+header #search .glass {
+  padding: 0.5rem;
+  width: 5vw;
+  height: 5vh;
+  text-align: center;
+  background-color: #333333;
+  border-radius: 0 1rem 1rem 0;
+}
+header #search .glass i {
+  font-size: 1.3rem;
+}
+header #search .micro i {
+  color: #ffffff;
+  font-size: 1.5rem;
+  margin-left: 1rem;
+}
+header #right ul {
+  width: 25vw;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+header #right ul li {
+  list-style: none;
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+
+#container {
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+}
+#container aside {
+  width: 20vw;
+  height: 90vh;
+  background-color: #404040;
+  color: #ffffff;
+  font-size: 0.8vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+#container aside div {
+  padding-left: 2vw;
+  font-size: 1rem;
+}
+#container aside .ersteteil {
+  height: 18vh;
+  border-bottom: solid 2px gray;
+}
+#container aside .ersteteil ul {
+  height: 18vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+#container aside .zweiteteil {
+  height: 32vh;
+  border-bottom: solid 2px gray;
+}
+#container aside .zweiteteil ul {
+  height: 32vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+#container aside .dritteteil {
+  height: 40vh;
+}
+#container aside .dritteteil h3 {
+  margin-top: 2rem;
+}
+#container aside .dritteteil ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+#container aside ul {
+  margin-left: 0.5rem;
+}
+#container aside ul li {
+  list-style: none;
+  margin: 0.5vh 0.4rem;
+}
+#container aside ul li span {
+  margin-left: 0.8rem;
+}
+#container main {
+  width: 80vw;
+  height: 90vh;
+  background-color: #272727;
+}
+#container main #überschrift {
+  width: 80vw;
+  height: 22vh;
+}
+#container main #parishilton {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  height: 18vh;
+}
+#container main #parishilton .oben {
+  display: flex;
+  justify-content: flex-start;
+  height: 9vh;
+}
+#container main #parishilton .oben .profil_image img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  margin-left: 5vw;
+}
+#container main #parishilton .oben .text_mitte {
+  margin: 1rem;
+}
+#container main #parishilton .oben .text_mitte p:first-child {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+#container main #parishilton .oben .text_mitte p:first-child span i {
+  color: #ffffff;
+  font-size: 2rem;
+}
+#container main #parishilton .oben .text_mitte p:last-child {
+  color: lightgray;
+}
+#container main #parishilton .oben button {
+  background-color: red;
+  width: 10rem;
+  height: 3rem;
+  text-transform: uppercase;
+  margin-left: 50vw;
+  margin-top: 1rem;
+  color: #ffffff;
+}
+#container main #parishilton .oben button:hover {
+  background-color: #ff9999;
+}
+#container main #parishilton .text-list ul {
+  margin-top: 1.5rem;
+  height: 9vh;
+}
+#container main #parishilton .text-list ul li {
+  display: inline-block;
+  margin: 1vh 0 1vh 5vw;
+  list-style: none;
+  text-transform: uppercase;
+  color: lightgray;
+}
+#container main #parishilton .text-list ul li:nth-child(2) {
+  color: #ffffff;
+  border-bottom: solid 2px white;
+  padding-bottom: 1.5rem;
+}
+#container main #images {
+  width: 80vw;
+  height: 50vh;
+  background-color: #1a1a1a;
+}
+#container main #images h3 {
+  color: #ffffff;
+  text-transform: capitalize;
+  padding: 2rem 0 0 2.5rem;
+}
+#container main #images .container_images {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.2rem;
+  padding: 2rem;
+}
+#container main #images .container_images div {
+  width: 15vw;
+  height: 19vh;
+}
+#container main #images .container_images div img {
+  width: 15vw;
+  height: 15vh;
+}
+#container main #images .container_images div p {
+  color: #ffffff;
+  text-align: center;
+}
+
+/*# sourceMappingURL=main.css.map */

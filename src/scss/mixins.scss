@@ -1,0 +1,22 @@
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin reset {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@mixin width_height($width,$height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin flex-column-evenly {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
