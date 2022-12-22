@@ -15,14 +15,11 @@ Das ist nur eine Übung
 ##### Developed With
 
 - [x] _HTML5_
-- [ ] _CSS3_
 - [x] _SASS_
 - [x] _SCSS_
 - [x] _JavaScript_
-- [ ] _React_
-- [ ] _Bootstrap_
 - [x] _npm_
-- [ ] _..._
+
 
 ---
 
