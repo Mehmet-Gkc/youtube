@@ -6,11 +6,11 @@
 
 ### About Project
 
-Ein Copy in der Youtube-Seite von Paris Hilton
+Ein Copy in der Youtube-Seite von Paris Hilton.
 
 ### How to use this Project
 
-Das ist nur eine Übung
+Das ist nur eine Übung.
 
 ##### Developed With
 
